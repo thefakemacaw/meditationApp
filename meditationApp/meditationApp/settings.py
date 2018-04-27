@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'alv&+#!garvbp+@4yd^luv@_q!$pzmh4h_bfc753=mn(1zpc(_'
+SECRET_KEY = 'c5fz+!+up!^2i)mf3dge$k#&$z3xwix&*^@v&n@v$(v)n0qmu@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -29,8 +29,10 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+#changes from Djangoproject https://docs.djangoproject.com/en/2.0/intro/tutorial02/
 
 INSTALLED_APPS = [
+    'medApp.apps.MedappConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -105,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'PDT'
 
 USE_I18N = True
 
